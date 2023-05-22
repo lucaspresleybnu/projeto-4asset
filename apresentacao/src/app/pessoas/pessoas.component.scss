@@ -1,0 +1,51 @@
+.page-content {
+  width: 904px;
+  margin: 0px auto;
+
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+
+    .page-title {
+      font-size: 44px;
+      font-weight: 800;
+      line-height: 58px;
+      margin-bottom: 0px;
+      color: #fff;
+    }
+
+    .btn-personalized {
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+      border-radius: 100px;
+      color: #fff;
+      text-transform: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 9px 20px;
+      gap: 32px;
+      height: 52px;
+    }
+  }
+
+  .body-content {
+    width: 100%;
+  }
+}
+
+.modal-pessoa {
+  .uk-modal-body {
+    .uk-modal-title {
+      font-weight: 700;
+      font-size: 28px;
+      color: #292929;
+    }
+  }
+}

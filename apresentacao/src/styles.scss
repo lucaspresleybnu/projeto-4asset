@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+
+* {
+  font-family: 'JetBrains Mono', Arial, Helvetica, sans-serif !important;
+  font-style: normal;
+}
+
+body {
+  background: url('./assets/img/fundo-tela.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}

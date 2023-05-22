@@ -1,0 +1,72 @@
+<form
+  class="uk-form-stacked form-pessoa"
+  [formGroup]="formPessoa"
+  (ngSubmit)="onSubmit()"
+>
+  <div class="uk-margin">
+    <label class="uk-form-label" for="form-stacked-text">Nome</label>
+    <div class="uk-form-controls">
+      <input
+        class="uk-input"
+        id="form-stacked-text"
+        type="text"
+        placeholder="Insira o nome"
+        formControlName="name"
+      />
+    </div>
+  </div>
+  <div class="uk-margin">
+    <label class="uk-form-label" for="form-stacked-text">E-Mail</label>
+    <div class="uk-form-controls">
+      <input
+        class="uk-input"
+        id="form-stacked-text"
+        type="email"
+        placeholder="Insira o e-mail"
+        formControlName="email"
+      />
+    </div>
+  </div>
+  <div class="uk-margin">
+    <label class="uk-form-label" for="form-stacked-text">Telefone</label>
+    <div class="uk-form-controls">
+      <input
+        class="uk-input"
+        id="form-stacked-text"
+        type="text"
+        placeholder="Insira o telefone"
+        formControlName="phone"
+      />
+    </div>
+  </div>
+  <div class="uk-margin">
+    <label class="uk-form-label" for="form-stacked-text"
+      >Data de nascimento</label
+    >
+    <div class="uk-form-controls">
+      <input
+        class="uk-input"
+        id="form-stacked-text"
+        type="text"
+        placeholder="Insira data de nascimento"
+        formControlName="birthDate"
+      />
+    </div>
+  </div>
+  <div class="uk-margin btns-modal">
+    <button
+      class="uk-button uk-button-secondary uk-button-large btn-submit"
+      type="submit"
+      [disabled]="!formPessoa.valid"
+    >
+      {{ btnSubmitName }}
+    </button>
+    <button
+      class="uk-button uk-button-default uk-button-large btn-cancel"
+      type="button"
+      (click)="fecharModal()"
+    >
+      Cancelar
+    </button>
+  </div>
+</form>

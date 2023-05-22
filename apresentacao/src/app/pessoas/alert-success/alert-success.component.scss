@@ -1,0 +1,23 @@
+.alert-pessoa {
+  .uk-modal-dialog {
+    width: 406px;
+
+    .uk-modal-title {
+      font-family: "JetBrains Mono";
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 28px;
+      color: #292929;
+    }
+    .btn-close {
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      background: #131e23;
+      border-radius: 100px;
+      color: #ffffff;
+      text-transform: none;
+    }
+  }
+}

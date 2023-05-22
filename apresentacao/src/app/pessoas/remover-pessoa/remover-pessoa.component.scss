@@ -1,0 +1,47 @@
+.alert-remove-pessoa {
+  .uk-modal-dialog {
+    width: 406px;
+    height: 238px;
+    border-radius: 10px;
+
+    .uk-modal-title,
+    .description-del {
+      font-family: "JetBrains Mono";
+      font-style: normal;
+    }
+    .uk-modal-title {
+      font-weight: 700;
+      font-size: 28px;
+      color: #292929;
+    }
+    .description-del {
+      font-weight: 500;
+      font-size: 14px;
+      color: #707070;
+    }
+
+    .btns-modal {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+
+      .uk-button {
+        font-family: "Open Sans";
+        text-transform: none;
+        font-weight: 600;
+        font-size: 16px;
+        border-radius: 100px;
+      }
+
+      .btn-confirm {
+        background-color: #131e23;
+        color: #fff;
+      }
+
+      .btn-close {
+        border: none;
+        color: #707070;
+      }
+    }
+  }
+}

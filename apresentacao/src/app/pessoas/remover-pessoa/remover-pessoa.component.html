@@ -1,0 +1,23 @@
+<div id="modal-remover-pessoa" class="alert-remove-pessoa uk-flex uk-open" uk-modal>
+  <div class="uk-modal-dialog uk-modal-body">
+    <button
+      class="uk-modal-close-default uk-icon uk-close"
+      type="button" (click)="closeModal()">
+      <svg width="14" height="14" viewBox="0 0 14 14">
+        <line fill="none" stroke="#000" stroke-width="1.1" x1="1" y1="1" x2="13" y2="13"></line>
+        <line fill="none" stroke="#000" stroke-width="1.1" x1="13" y1="1" x2="1" y2="13"></line>
+      </svg>
+    </button>
+    <h2 class="uk-modal-title">Excluir cadastro</h2>
+    <p class="description-del">
+      O cadastro será excluído definitivamente. Você tem certeza que deseja
+      continuar?
+    </p>
+    <div class="btns-modal">
+      <button class="uk-button uk-button-default uk-button-large btn-close"
+        type="button" (click)="closeModal()">Cancelar</button>
+      <button class="uk-button uk-button-default uk-button-large btn-confirm"
+        type="button" (click)="confirmaExclusao()">Excluir</button>
+    </div>
+  </div>
+</div>

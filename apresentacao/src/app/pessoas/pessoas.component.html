@@ -1,0 +1,42 @@
+<section class="page-content">
+  <div class="header-content">
+    <h3 class="page-title">Cadastro de pessoas</h3>
+    <button
+      class="uk-button uk-button-default btn-personalized"
+      type="button" (click)="closeModal(false)">
+      <span>Novo cadastro</span>
+      <img src="../assets/img/arrow-right.svg" />
+    </button>
+  </div>
+  <div class="body-content">
+    <app-lista-pessoas [listaPessoas]="listaPessoas" (actionPessoa)="actionPessoa($event)"/>
+  </div>
+</section>
+
+<ng-template [ngIf]="!modalFormClosed">
+  <div id="modal" class="modal-pessoa uk-flex uk-open" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+      <button
+        class="uk-modal-close-default uk-icon uk-close"
+        type="button" (click)="closeModal(true)">
+        <svg width="14" height="14" viewBox="0 0 14 14">
+          <line fill="none" stroke="#000" stroke-width="1.1" x1="1" y1="1" x2="13" y2="13"></line>
+          <line fill="none" stroke="#000" stroke-width="1.1" x1="13" y1="1" x2="1" y2="13"></line>
+        </svg>
+      </button>
+      <h2 class="uk-modal-title">{{ modalTitle }}</h2>
+      <app-form-pessoa 
+        [dadosPessoa]="cadPessoa" [idPessoa]="idPessoa" 
+        (editPessoa)="editarPessoa($event)" (cadPessoa)="cadastrarPessoa($event)" (modalClose)="closeModal($event)"
+      />
+    </div>
+  </div>
+</ng-template>
+
+<ng-template [ngIf]="showModalConfirmDel">
+  <app-remover-pessoa (closeModalConfirm)="closeModalConfirmDel()" (confirmDel)="confirmDelPessoa($event)" [idPessoa]="idPessoa"/>
+</ng-template>
+
+<ng-template [ngIf]="showModalSuccess">
+  <app-alert-success [messageAlert]="titleModalSuccess" (closeAlert)="showAlertSuccess($event)"/>
+</ng-template>
