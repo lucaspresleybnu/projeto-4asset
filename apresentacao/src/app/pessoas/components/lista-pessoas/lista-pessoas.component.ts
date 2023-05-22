@@ -1,7 +1,7 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 
-import { Pessoa } from '../models/pessoa';
-import { PessoaOptionSelected } from '../models/pessoa-option-selected';
+import { Pessoa } from '../../models/pessoa';
+import { PessoaOptionSelected } from '../../models/pessoa-option-selected';
 
 @Component({
   selector: 'app-lista-pessoas',

@@ -62,6 +62,7 @@ export class PessoasComponent implements OnInit {
       setTimeout(() => {
         this.setActionAlert(EnumRetornoSubmitForm.sucessoDel);
       }, 500);
+      this.setPessoaDefault();
     });
   }
 

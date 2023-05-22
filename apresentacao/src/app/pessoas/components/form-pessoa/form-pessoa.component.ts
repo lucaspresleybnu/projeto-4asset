@@ -1,7 +1,7 @@
 import { Component, EventEmitter, Input, Output, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { PessoaBody } from '../models/pessoa-body';
-import { EnumBtnName, EnumPessoa } from '../enums/pessoa.enum';
+import { PessoaBody } from '../../models/pessoa-body';
+import { EnumBtnName, EnumPessoa } from '../../enums/pessoa.enum';
 
 @Component({
   selector: 'app-form-pessoa',
